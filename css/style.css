@@ -36,9 +36,9 @@
     height: 400px;
 }
 .centrale {
-    width: 350px;
+    width: 590px;
     height: 480px;
-    vertical-align: middle;
+    margin-top: 10px;
     background-color: pink;
     border: 1px solid black;
     /* esce dal flusso e permette ad aside di affincarsi */
@@ -46,12 +46,13 @@
 }
 /* aside elemento laterale */
 .aside {
-    width: 240px;
+    width: 290px;
     height: 480px;
-    margin-top: 5px;
+    margin-top: 10px;
     background-color: orange;
     border: 1px solid black;
     float: right;
+    vertical-align: middle;
 
 }
 .footer {
