@@ -67,8 +67,10 @@
 }
 .text {
     text-align: center;
+    /* intelinea */
     line-height: 50px;
 }
 .text.due {
+    /* a cascata priorità rispetto ad text */
     line-height: 480px;
 }
