@@ -64,5 +64,11 @@
     /* ancoriamo in basso */
     position: absolute;
     bottom: 0;
-
+}
+.text {
+    text-align: center;
+    line-height: 50px;
+}
+.text.due {
+    line-height: 480px;
 }
