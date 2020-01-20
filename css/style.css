@@ -4,9 +4,64 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* default per ... */
-clearfix:after {
+/* ::after SPEUDO ELEMENTO */
+.clearfix:after {
+    /* senza non funziona il clearfix */
     content: "";
+    /* atto di fede :) */
     display: table;
+    /* indica la fine del contenuto */
     clear: both;
+}
+.container {
+    width: 900px;
+    height: 600px;
+    background-color: grey;
+    /* centrare */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.header {
+    /* larghezza del contenenitore padre "continer" */
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    border: 1px solid black;
+}
+.main {
+    /* larghezza del contenenitore padre "continer" */
+    width: 100%;
+    height: 400px;
+}
+.centrale {
+    width: 350px;
+    height: 480px;
+    vertical-align: middle;
+    background-color: pink;
+    border: 1px solid black;
+    /* esce dal flusso e permette ad aside di affincarsi */
+    float: left;
+}
+/* aside elemento laterale */
+.aside {
+    width: 240px;
+    height: 480px;
+    margin-top: 5px;
+    background-color: orange;
+    border: 1px solid black;
+    float: right;
+
+}
+.footer {
+    /* larghezza del contenenitore padre "continer" */
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+    border: 1px solid black;
+    /* ancoriamo in basso */
+    position: absolute;
+    bottom: 0;
+
 }
