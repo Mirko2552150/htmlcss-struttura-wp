@@ -6,71 +6,52 @@
 }
 /* ::after SPEUDO ELEMENTO */
 .clearfix:after {
-    /* senza non funziona il clearfix */
     content: "";
-    /* atto di fede :) */
     display: table;
-    /* indica la fine del contenuto */
     clear: both;
 }
-.container {
-    width: 900px;
-    height: 600px;
-    background-color: grey;
-    /* centrare */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+.conteiner {
+    /* dimensioni container 80% del visibile */
+    width: 80%;
+    /* centriamolo senza Position */
+    margin: 0 auto;
+    /* NB:non si vede perchè */
+    background-color: white;
 }
-.header {
-    /* larghezza del contenenitore padre "continer" */
-    width: 100%;
-    height: 50px;
-    background-color: red;
-    border: 1px solid black;
-}
-.main {
-    /* larghezza del contenenitore padre "continer" */
-    width: 100%;
-    height: 400px;
-}
-.centrale {
-    width: 590px;
-    height: 480px;
-    margin-top: 10px;
+/* riga non gabbia */
+.row {
+    height: 500px;
     background-color: pink;
-    border: 1px solid black;
-    /* esce dal flusso e permette ad aside di affincarsi */
-    float: left;
 }
-/* aside elemento laterale */
-.aside {
-    width: 290px;
-    height: 480px;
-    margin-top: 10px;
-    background-color: orange;
-    border: 1px solid black;
-    float: right;
-    vertical-align: middle;
+main .content {
+    /* TRICK */
+    height: 100%;
+    background-color: purple;
+}
+header {
+    /*se 100% non metterlo, default*/
+    height: 150px;
+    background-color: green;
+    margin-bottom: 10px;
+}
 
+aside {
+    width: 25%;
+    /*NB: in classe 100% */
+    height: 100%;
+    float: left;
+    background: blue;
 }
-.footer {
-    /* larghezza del contenenitore padre "continer" */
-    width: 100%;
-    height: 50px;
+main {
+    width: 50%;
+    height: 100%;
+    background-color: violet;
+    float: left;
+    /* TRICK */
+    padding: 0 10px;
+}
+footer {
+    height: 200px;
     background-color: yellow;
-    border: 1px solid black;
-    /* ancoriamo in basso */
-    position: absolute;
-    bottom: 0;
-}
-.text {
-    text-align: center;
-    /* intelinea */
-    line-height: 50px;
-}
-.text.due {
-    /* a cascata priorità rispetto ad text */
-    line-height: 480px;
+    margin-top: 10px;
 }

@@ -2,38 +2,37 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>htmlcss-struttura-wp</title>
-        <!-- link css -->
+        <title>COMPITO IN SOLITARIA</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!-- conterra tutta la pagina, meglio tenere fuori il body -->
-        <div class="container">
-            <!-- parte superiore -->
-            <div class="header">
-                <div class="text uno">
-                    <h1>HEADER</h1>
-                </div>
+        <!-- nostro contenitore padre -->
+        <div class="conteiner">
+
+            <header>
+                <!-- menu con LIST -->
+                <nav>
+
+                </nav>
+            </header>
+            <!-- non eraditario inserirlo ad ogni ancestor necessario -->
+            <div class="row clearfix">
+                <aside>
+                    <!-- TRICK -->
+                    <div class="content"></div>
+                </aside>
+                <main>
+                    <!-- TRICK -->
+                    <div class="content"></div>
+                </main>
+                <aside>
+                    <!-- inserisco un div per il margine TRICK -->
+                    <div class="content"></div>
+                </aside>
             </div>
-            <!-- corpo centrale con 3 elementi -->
-            <div class="main">
-                <div class="contenitore centrale">
-                    <div class="text due">
-                        <h1>CENTRALE</h1>
-                    </div>
-                </div>
-                <div class="contenitore aside">
-                    <div class="text due">
-                        <h1>ASIDE</h1>
-                    </div>
-                </div>
-            </div>
-            <!-- parte inferiore -->
-            <div class="footer">
-                <div class="text quattro">
-                    <h1>FOOTER</h1>
-                </div>
-            </div>
+            <footer>
+
+            </footer>
         </div>
     </body>
 </html>
