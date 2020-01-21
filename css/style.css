@@ -32,7 +32,6 @@ header {
     /*se 100% non metterlo, default*/
     height: 250px;
     background-size: cover;
-
     border: 1px solid black;
 }
 
@@ -83,6 +82,7 @@ h1 {
     margin-bottom: 10px;
     border: 1px solid black
 }
+/* NB NB NB TOGLIERE I PUNTINI */
 ul {
     position: absolute;
     left: 50%;
@@ -96,4 +96,14 @@ li {
     float: left;
     margin-left: 50px;
     color: white;
+}
+.icone {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    line-height: 80px;
+}
+i {
+    margin-left: 150px;
+    margin-right: 150px;
 }
